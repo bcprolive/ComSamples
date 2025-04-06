@@ -3,7 +3,7 @@
 #include <atlsafe.h> // for CComSafeArray
 #include <iostream>
 #include <vector>
-#include <MyInterfaces.tlh>
+#include "../MyInterfaces/x64/Debug/MyInterfaces.tlh"
 #include "../support/ComSupport.hpp"
 
 

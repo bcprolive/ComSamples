@@ -1,7 +1,8 @@
 #include <Windows.h>
 #include <atlbase.h>
 #include "Resource.h"
-#include "MyInterfaces.tlh"
+//#include "MyInterfaces.tlh"
+#include "../MyInterfaces/x64/Debug/MyInterfaces.tlh"
 #include "../support/ComSupport.hpp"
 
 

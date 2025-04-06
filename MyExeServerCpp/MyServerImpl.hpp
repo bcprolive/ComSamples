@@ -4,10 +4,13 @@
 #include <thread>
 #include <vector>
 
+#include <atlsafe.h> 
+#include <oleauto.h>
+
 #include <atlbase.h>
 #include <atlcom.h>  // for CComObject
 #include <ATLComTime.h> // for COleDateTime
-#include "MyInterfaces.tlh"
+#include "../MyInterfaces/x64/Debug/MyInterfaces.tlh"
 #include "Resource.h"
 #include "../support/ComSupport.hpp"
 
@@ -102,7 +105,8 @@ public:
                 msg.sev = Severity::Info;
                 msg.time = COleDateTime::GetCurrentTime();
                 msg.value = 1.23;
-                msg.desc = "Hello there!";
+                //msg.desc = "Hello there!";
+                msg.desc = SysAllocString(L"MyString");
                 msg.color[0] = 255;
                 msg.color[1] = 0;
                 msg.color[2] = 0;
